@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".collections.ListviewItemActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quán Yêu Thích"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/quan1"></ImageView>
+        <TextView
+            android:id="@+id/idTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Trà sữa và Bánh ngọt - 268 Trần Cao Vân "
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black">
+        </TextView>
+        <TextView
+            android:id="@+id/idTitlephu"
+            android:layout_width="350dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:text="268 Trần Cao Vân"
+            android:textSize="20dp">
+        </TextView>
+        <RatingBar
+            android:id="@+id/rate"
+            style="@android:style/Widget.Holo.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idttphu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:layout_marginLeft="20dp"
+            android:progressTint="#E1B634"
+            android:rating="3" />
+    </LinearLayout>
+</LinearLayout>
